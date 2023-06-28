@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <main>
+        <h1 class="header"> Leaderboard</h1>
+        <section class="players">
+            <div>
+                <div class="players-header">
+                    <h2 class="secondaryHeader">recent scores</h2>
+                    <button class="btn"> refresh</button>
+                </div>
+                <ul class="players-list">
+                    <li class="player-info">name:100</li>
+                    <li class="player-info">name:100</li>
+                    <li class="player-info">name:100</li>
+                    <li class="player-info">name:100</li>
+                </ul>
+            </div>
+            <div class="players-container">
+                <h2 class="secondaryHeader">Add Your Score</h2>
+                <form class="form" action="/" method="post">
+                    <ul class="form-list">
+                        <li class="form-control">
+                            <input type="text" class="form-input" name="playerName" id="player-name">
+                        </li> 
+                        <li class="form-control">
+                            <input type="text" class="form-input" name="playerName" id="player-name">
+                        </li> 
+                        <li class="form-control">
+                            <button type="submit" class="btn">Submit</button>
+                        </li> 
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+  <script src="./bundle.js"></script>
+</body>
+</html>
