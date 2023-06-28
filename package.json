@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo",
+  "name": "leaderboard",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -7,7 +7,8 @@
     "watch": "webpack --watch",
     "start": "webpack serve --open --mode development",
     "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "style":"npx stylelint \"**/*.{css,scss}\" --fix"
   },
   "keywords": [],
   "author": "",
