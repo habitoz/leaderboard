@@ -1,35 +1,74 @@
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+:root {
+  --lighterBg: #1f1e31;
+  --lightBg: #171427;
+  --yellow: #eafa45;
+  --bg: #020114;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
-  padding: 10px 50px;
-  margin-top: 20px;
+  padding: 40px 50px;
+  background-color: var(--bg);
+  height: 100vh;
+}
+
+.header {
+  color: #eafa45;
 }
 
 .players {
   display: flex;
-  margin-top: 20px;
   align-items: start;
-  justify-items: center;
-  gap: 50px;
-  padding: 5px 30px;
+  justify-content: center;
+  gap: 100px;
+  margin: 40px auto 20px;
+  padding: 40px 30px;
+  width: 80%;
+  background-color: var(--lightBg);
 }
 
 .players-list {
   margin-top: 20px;
   list-style: none;
-  border: 1px solid #999;
+  border: 1px solid var(--yellow);
+  max-height: 40vh;
+  overflow-y: auto;
 }
 
 .player-info {
-  padding: 7px 5px;
+  padding: 20px 15px;
+  color: #fff;
 }
 
 .player-info:nth-of-type(even) {
-  background-color: #eee;
+  background-color: var(--lighterBg);
+  color: #fff;
 }
 
 .players-header {
@@ -38,7 +77,12 @@ main {
 }
 
 .btn {
-  padding: 3px 10px;
+  padding: 5px 15px;
+  background-color: var(--yellow);
+  color: var(--lightBg);
+  text-transform: capitalize;
+  border: none;
+  border-radius: 2px;
 }
 
 .error {
@@ -59,10 +103,15 @@ main {
 }
 
 .form-input {
-  height: 25px;
+  height: 35px;
   padding: 3px 5px;
+  color: #fff;
+  border-radius: 2px;
+  background-color: var(--lighterBg);
+  border: 1px solid var(--yellow);
 }
 
 .secondaryHeader {
   text-transform: capitalize;
+  color: #fff;
 }
